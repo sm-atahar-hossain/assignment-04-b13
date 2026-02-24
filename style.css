@@ -6,6 +6,8 @@ body{
     background:rgb(226, 233, 241);
     margin: auto;    
 }
+
+
 header,section{
     width: 90%;
     margin: 20px auto;
@@ -15,6 +17,7 @@ header,section{
     justify-content:start ;
     flex-wrap: wrap;
     gap: 20px;
+    text-align: center;
 }
 .countsDiv div {
     width: 25%;
@@ -29,7 +32,7 @@ header,section{
     font-size: larger;
 }
 .countsDiv #interview{
-    color: rgb(3, 255, 3);
+    color: rgb(0, 159, 0);
 }
 .countsDiv #rejected{
     color: rgb(250, 17, 17);
