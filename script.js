@@ -153,7 +153,7 @@ function printJobs(status) {
     });
 
     availableJobs.innerText = count;
-    if (count === 0) noJobSection.style.display = "flex";
+    (count === 0)? noJobSection.style.display = "flex":noJobSection.style.display = "none";
 
     updateCounts();
 }
