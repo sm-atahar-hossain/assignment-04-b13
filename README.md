@@ -42,5 +42,3 @@ Its useful because improves performance, workes for dynamically added elements, 
 ANSWER=
 preventDefault() use for stops the default browser behavior of element.
 stopPropagation() use for stops the event from bubbling or capturing to parent elements.
-
-
