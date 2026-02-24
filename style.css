@@ -1,0 +1,153 @@
+*{  
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background:rgb(226, 233, 241);
+    margin: auto;    
+}
+header,section{
+    width: 90%;
+    margin: 20px auto;
+}
+.countsDiv{
+    display: flex;
+    justify-content:start ;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.countsDiv div {
+    width: 25%;
+    padding: 20px 30px;
+    background: white;
+    margin-top: 20px;
+    box-shadow:1px 1px 10px rgb(99, 99, 100);
+    border-radius: 10px;
+}
+.countsDiv span{
+    font-weight: 900;
+    font-size: larger;
+}
+.countsDiv #interview{
+    color: rgb(3, 255, 3);
+}
+.countsDiv #rejected{
+    color: rgb(250, 17, 17);
+}
+
+
+
+.available-jobs-section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.available-jobs{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.available-jobs h3{
+    font-size: 25px;
+}
+.available-jobs span{
+    color: rgb(67, 7, 246);
+    font-size: 25px;
+    font-weight: bolder;
+}
+.active-btn{
+    display: flex;
+    gap: 20px;
+}
+.active-btn button{
+    padding: 5px 10px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    color: grey;
+
+}
+.active-btn button.active {
+  background: #2563eb;
+  color: white;
+}
+.cards{
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow:1px 1px 10px rgb(99, 99, 100);
+    border-radius: 10px;
+}
+
+.card-start{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.card-start button{
+    background-color:white;
+    border: none;
+    color: gray;
+}
+.card-btn{
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #e9e6e6;
+    border-radius: 10px;
+    width: 35%;
+    width: fit-content;
+}
+.card-center{
+    color: grey;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.card-end{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+
+.no-jobs{
+    height:50vh ;
+    background-color: white;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 7px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+}
+.no-jobs P{
+    color: grey;
+    font-size: 14px;
+}
+
+@media (min-width:780px){
+    .cards{
+    grid-template-columns:1fr 1fr;
+    gap: 20px;
+}
+.countsDiv{
+    justify-content:space-between;   
+}
+}
+@media (min-width:1024px){
+    .cards{
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 20px;
+}
+}

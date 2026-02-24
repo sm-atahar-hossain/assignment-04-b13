@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <!-- HEAD -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title -->
+    <title>Job Application Tracker</title>
+    <!-- link style file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Add font awesome -->
+    <script
+      src="https://kit.fontawesome.com/4755690280.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <!-- BODY -->
+  <body>
+    <div style="overflow: hidden">
+      <!-- header section -->
+      <header>
+        <!-- titel -->
+        <h1>Job Application Tracker</h1>
+        <!-- Counts All jobs, interview jobs and rejected jobs -->
+        <div class="countsDiv">
+          <div>
+            <p>Total <br /><span id="total">0</span></p>
+          </div>
+          <div>
+            <p>Interview <br /><span id="interview">0</span></p>
+          </div>
+          <div>
+            <p>Rejected <br /><span id="rejected">0</span></p>
+          </div>
+        </div>
+      </header>
+      <!-- Available jobs section -->
+      <section class="available-jobs-section">
+        <!-- heading and jobs counts base on status -->
+        <div class="available-jobs">
+          <h3>Available Jobs</h3>
+          <p><span id="available">0</span> Jobs</p>
+        </div>
+        <!-- Active status buttons -->
+        <div class="active-btn">
+          <button>All</button>
+          <button>Interview</button>
+          <button>Rejected</button>
+        </div>
+        <!-- Jobs section -->
+        <div class="cards">
+          <!-- Job1 -->
+          <div class="card">
+            <div class="card-start">
+              <h4>Mobile First Corp</h4>
+              <button><i class="fa-solid fa-trash"></i></button>
+            </div>
+            <div class="card-center">
+              <p>React Native Developer</p>
+              <p>Remote • Full-time • $130,000 - $175,000</p>
+              <button class="card-btn">Not Applied</button>
+              <p>
+                Build cross-platform mobile applications using React Native.
+                Work on products used by millions of users worldwide.
+              </p>
+            </div>
+            <div class="card-end">
+              <button
+                class="card-btn"
+                style="
+                  color: rgb(1, 167, 1);
+                  background-color: rgba(238, 245, 224, 0.698);
+                  border: 2px solid;
+                "
+              >
+                Interview
+              </button>
+              <button
+                class="card-btn"
+                style="
+                  color: rgb(254, 59, 56);
+                  background-color: rgba(242, 215, 205, 0.698);
+                  border: 2px solid;
+                "
+              >
+                Rejected
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- No job section -->
+        <div class="no-jobs" style="display: none">
+          <img width="80px" src="jobs.png" alt="" srcset="" />
+          <h4>No Jobs Available</h4>
+          <p>Check back soon for new job opportunities</p>
+        </div>
+      </section>
+    </div>
+    <!-- JS files -->
+    <script src="script.js"></script>
+  </body>
+</html>
